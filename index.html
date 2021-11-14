@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <title>JumptoFuture</title>
+
+        </head>
+        <style>
+            iconito {
+            -webkit-transition: transform 1s ease;
+            transition: transform 1s ease;
+            height: 4em;
+            }
+            .iconito:hover {
+                transform: scale(0.9); 
+            }
+            body{
+                background: rgb(131,226,251);
+                background: linear-gradient(135deg, rgba(131,226,251,1) 0%, rgba(213,241,255,1) 15%, rgba(251,251,251,1) 48%, rgba(210,184,240,1) 93%, rgb(183, 129, 245) 100%);
+
+            }
+            #keridonavbar{
+                background-image: url('img\PETs_iStock-871467770_1550x750.jpg');
+            }
+            p, li{
+                color:rgb(3, 40, 109);
+                font-size: small;
+            }
+            h4{
+                color:rgb(101, 84, 250)
+            }
+            #cajaformulario{
+                box-shadow: -30px 30px 10px 0px rgba(0,0,0,0.8);
+                -webkit-box-shadow: -30px 30px 10px 0px rgba(0,0,0,0.8);
+                -moz-box-shadow: -30px 30px 10px 0px rgba(0,0,0,0.8);
+            }
+
+        </style>
+<body>
+    <div class="container-fluid ps-0 pe-0 pb-4 pt-0">
+        <!--navbar-->
+        <nav id="keridonavbar" class="navbar navbar-expand-lg navbar-dark" style="background-image: url('https://royalsociety.org/-/media/policy/projects/privacy-enhancing-technologies/PETs_iStock-871467770_1550x750.jpg?w=1200');">
+            <div class="container-fluid">
+                <img class="p-4" src="img\logo_bco_cmpl.png" alt="" style="height: 6em;">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color:rgb(208, 161, 252)">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#keridonavbar">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cajaformulario">Contacto</a>
+                    </li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+        <div class="row row-cols-xs-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2 pt-4">
+            <div class="col col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+
+                <div class="row row-cols-xs-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3"><!--nosotros, mision y vision-->
+                    <div class="col pt-4">
+                        <div class="text-center m-4">
+                            <img id="nosotros" class="iconito" src="img\logo_lila_letrascortas.png" alt="..." style="height: 7em;">
+                            <h4>Nosotras</h4>
+                            <p id="nosotrostexto" class="text-center" style="display:none;">Somos dos desarrolladoras chilenas emprendedoras: Nicole Araya y Francisca Ljubetic. <br>Desarrollamos soluciones para el flujo de trabajo interno y para la conexión entre el negocio y sus clientes. </p>
+                        </div>
+                    </div>
+                    <div class="col pt-4">
+                        <div  class="text-center m-4">
+                            <img id="mision" class="iconito" src="img\mision.png" alt="..." style="height: 7em;">
+                            <h4>Misión</h4>
+                            <p id="misiontexto" class="text-center" style="display:none;">Somos una empresa de desarrollo de software a la medida que provee soluciones de calidad a mipymes chilenas. </p>
+                        </div>
+                    </div>
+                    <div class="col pt-4">
+                        <div  class="text-center m-4">
+                            <img id="vision" class="iconito" src="img\vision-estrategica-lila-sombra.png" alt="..." style="height: 7em;">
+                            <h4>Visión</h4>
+                            <p id="visiontexto" class="text-center" style="display:none;">Llevar los emprendimientos de nuestros clientes a dar un salto más allá en gestión, tecnologías y crecimiento. Realizando la inserción y adaptación en el mundo tecnológico de forma amigable.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-2 row-cols-xxl-2"><!--valores  y obj estrategico-->
+                    <div class="col">
+                        <div  class="text-center m-4">
+                            <img id="objestrategicos" class="iconito" class="text-center" src="img\goal-lila-sombra.png" alt="..." style="height: 7em;">
+                            <h4>Objetivos Estratégicos</h4>
+                        </div>
+                        <ul id="objestrategicostexto" style="list-style:none;display:none;">
+                            <li>
+                                <div class="row p-0">
+                                    <div class="col-1">
+                                        <img id="cliente" class="col text-center inline-block" src="img\cliente.png" alt="..." style="height: 3em;">
+                                    </div>
+                                    <div class="col-10 ms-4">
+                                        <p id="clientetexto" class="col inline-block text-justify" style="line-height: 2em;">Fidelizar a nuestros clientes.</p>
+                                    </div> 
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row p-0">
+                                    <div class="col-1">
+                                        <img id="moneda" class="col text-center inline-block" src="img\moneda.png" alt="..." style="height: 2.5em;">
+                                    </div>
+                                    <div class="col-10 ms-4">
+                                        <p id="monedatexto" class="col inline-block text-justify" style="line-height: 2em;">Entregar servicios de calidad, a precios accesibles.</p>
+                                    </div> 
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row p-0">
+                                    <div class="col-1">
+                                        <img id="soluciones" class="col text-center inline-block" src="img\soluciones.png" alt="..." style="height: 3em;">
+                                    </div>
+                                    <div class="col-10 ms-4">
+                                        <p id="solucionestexto" class="col inline-block text-justify">Proveer soluciones informáticas ajustadas a los requerimientos del cliente, sencillas de utilizar, implementar y escalables en el tiempo.</p>
+                                    </div> 
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col">
+                        <div  class="text-center m-4">
+                            <img id="valores" class="text-center iconito" src="img\diamond-lila-sombra.png" alt="..." style="height: 7em;">
+                            <h4>Nuestros Valores</h4>
+                        </div  >
+                        <ul id="valorestexto" class="p-0" style="list-style:none;display:none;">
+                            <li>
+                                <div class="row p-0">
+                                    <div class="col-1">
+                                        <img id="simplicidad" class="col text-center inline-block" src="img\simplicidad.png" alt="..." style="height: 3em;">
+                                    </div>
+                                    <div class="col-10 ms-4">
+                                        <p id="simplicidadtexto" class="col inline-block text-justify">Simplicidad: hacer más simple la gestión de necesidades del cliente, proveyendo soluciones simples a grandes desafíos.</p>
+                                    </div> 
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row p-0">
+                                    <div class="col-1">
+                                        <img id="innovacion" class="col text-center inline-block" src="img\innovacion.png" alt="..." style="height: 3em;">
+                                    </div>
+                                    <div class="col-10 ms-4">
+                                        <p id="innovaciontexto" class="col inline-block text-justify">Innovación: aportar permanente con la novedad, mejorando productos, servicios y procesos, apostando por la vanguardia en últimas tecnologías, para lograr crecimiento, ventajas competitivas y valor agregado.</p>
+                                    </div> 
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row p-0">
+                                    <div class="col-1">
+                                        <img id="calidad" class="col text-center inline-block" src="img\calidad.png" alt="..." style="height: 3em;">
+                                    </div>
+                                    <div class="col-10 ms-4">
+                                        <p id="calidadtexto" class="col inline-block text-justify">Calidad: entregar servicios personalizados que superen las expectativas de nuestros clientes, agregando valor en cada etapa.</p>
+                                    </div> 
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row p-0">
+                                    <div class="col-1">
+                                        <img id="confianza" class="col text-center inline-block" src="img\confianza.png" alt="..." style="height: 3em;">
+                                    </div>
+                                    <div class="col-10 ms-4">
+                                        <p id="confianzatexto" class="col inline-block text-justify">Confianza: generar en nuestros clientes y también al interior de nuestro equipo, la seguridad de que el producto final será gestionado y provisto de manera transparente, ética, segura, de calidad y de acuerdo a los compromisos adquiridos.</p>
+                                    </div> 
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row p-0">
+                                    <div class="col-1">
+                                        <img id="promesa" class="col text-center inline-block" src="img\promesa.png" alt="..." style="height: 3em;">
+                                    </div>
+                                    <div class="col-10 ms-4">
+                                        <p id="promesatexto" class="col inline-block text-justify">Promesa: Somos muy estrictos en traducir los requerimientos del cliente en soluciones sencillas, efectivas y eficaces. .</p>
+                                    </div> 
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row"><!--servicios-->
+                    <div class="col">
+                        <div  class="text-center m-4">
+                            <img id="servicios" class="text-center iconito" src="img\servicios.png" alt="..." style="width: 7em;">
+                            <h4>Nuestros Servicios</h4>
+                        </div>
+                        <ul class="p-0" id="serviciostexto" style="list-style:none;display:none;">
+                            <li>
+                                <div class="row">
+                                    <div class="offset-1 col-1">
+                                        <img class="col text-center inline-block ms-4" src="img\logo_lila_sombra.png" alt="..." style="height: 2em;">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="col inline-block text-justify">Páginas web responsivas con para profesionales y servicios, hosting y dominios incluidos</p>
+                                    </div> 
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="offset-1 col-1">
+                                        <img class="col text-center inline-block ms-4" src="img\logo_lila_sombra.png" alt="..." style="height: 2em;">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="col inline-block text-justify">Optimización SEO de páginas web e integración con Redes Sociales.</p>
+                                    </div> 
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="offset-1 col-1">
+                                        <img class="col text-center inline-block ms-4" src="img\logo_lila_sombra.png" alt="..." style="height: 2em;">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="col inline-block text-justify">Optimización SEO de páginas web e integración con Redes Sociales.</p>
+                                    </div> 
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="offset-1 col-1">
+                                        <img class="col text-center inline-block ms-4" src="img\logo_lila_sombra.png" alt="..." style="height: 2em;">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="col inline-block text-justify">Aplicaciones web, Mantenedores, Migraciones e integraciones vá API</p>
+                                    </div> 
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="offset-1 col-1">
+                                        <img class="col text-center inline-block ms-4" src="img\logo_lila_sombra.png" alt="..." style="height: 2em;">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="col inline-block text-justify">Levantamientos de marca para emprendedores y Branding</p>
+                                    </div> 
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+            <div class="col col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"><!--gran columna formulario-->
+                
+                <div id="cajaformulario" class="p-4 m-2 text-bold text-white" style="border-radius: 15px; background: rgb(100,100,249); background: linear-gradient(45deg, rgba(100,100,249,1) 0%, rgba(228,152,241,1) 100%);">
+                    <form id="formulariocontacto" action="formulario.php" method ="post" class="form_register">
+                        <h2 class="form_title text-center ">Escríbenos</h2>
+                        <div class="row">
+                            <div class="col p-3">
+                                <label for="nombre" class="form_label  mb-2">Tu nombre</label><input type="text" class="validate form-control input-index input-index" required>
+                                <label for="correo" class="form_label  mb-2 mt-4">Correo</label><input name="correo" type="email" class="validate form-control input-index input-index" required>
+                                <label for="telefono" class="form_label  mt-4">Teléfono</label><input name="telefono" type="tel" class="validate form-control input-index input-index" required>
+                                <label for="mensaje" class="form_label  mt-4">Escríbenos un mensaje</label> <br> <textarea id="mensaje" name="mensaje" rows="5" class="validate form-control input-index input-index">
+                                </textarea>
+                            </div>
+                        </div>
+                        <button id="botonenviar" type="submit" class="text-white btn btn-info" style="border-color:rgb(125, 5, 245); background-color: rgb(40, 20, 173);"> Enviar</button>
+                    </form>        
+                    <p class="text-bold mt-3"> 
+                        Dirección: AV Exequiel Fernández 1335, Ñuñoa, Santiago, Chile. <br>
+                        Teléfonos: <a href="tel:+56984263315" style="color:rgb(79, 3, 255)">+56984263315</a> <br>
+                        Email: <a href="mailto:jumptofuture@gmail.com" style="color:rgb(79, 3, 255)"> jumtofuture@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--footer-->
+    </div>
+    <div id="footer"class="container-fluid p-4" style="background: rgb(72,2,78); background: linear-gradient(135deg, rgba(72,2,78,1) 0%, rgba(47,37,155,1) 49%, rgb(153, 4, 240) 100%);">
+        <div class="row">
+            <p class="text-info">JumpToFuture jumptofuture@gmail.com +56984263315 +56986047484. <br>  © 2021 JumpToFuture</p>
+        </div>
+        <div>
+            <p class="text-info" >Iconos diseñados por <a href="https://www.flaticon.es/autores/eucalyp" title="Eucalyp">Eucalyp</a> de <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a> y  <a href="" title="Icongeek26">Icongeek26</a>, de <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>. </p>
+        </div>
+    </div>
+    
+
+    <script>
+        toastr.options = {
+        "closeButton": true,
+        "progressBar": true,
+        }
+
+        {% if messages %}
+        {% for message in messages %}
+            toastr.{{message.tags }}("{{ message }}")
+        {% endfor %}
+        {% endif %}
+
+        {% block libreria %}
+        {% endblock %} 
+    </script>
+    <script>
+        $(document).ready(function(){
+            
+            $( "#nosotros" ).on('click', 
+                function() {
+                $( "#nosotrostexto" ).toggle();
+                }
+            );
+    
+            $( "#vision" ).on('click', 
+                function() {
+                $( "#visiontexto" ).toggle();
+                }
+            );
+    
+            $( "#mision" ).on('click', 
+                function() {
+                $( "#misiontexto" ).toggle();
+                }
+            );
+    
+    
+            $( "#valores" ).on('click', 
+                function() {
+                $( "#valorestexto" ).toggle();
+                }
+            );
+    
+            $( "#objestrategicos" ).on('click', 
+                function() {
+                $( "#objestrategicostexto" ).toggle();
+                }
+            );
+    
+            $( "#servicios" ).on('click', 
+                function() {
+                $( "#serviciostexto" ).toggle();
+                }
+            );
+    
+        })
+    
+    </script>
+</body>
+</html>
