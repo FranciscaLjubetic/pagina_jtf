@@ -1,0 +1,241 @@
+@media only screen and (max-width: 576px){/*RESPONSIVENESS*/
+        .columnas_rebeldes{
+            display: block;
+            align-items: center;
+            
+        }
+    }
+
+/*ANIMATIONS*/
+@keyframes slidein { 
+    from {
+    margin-left: 100%;
+    width: 300%;
+    }
+
+    to {
+    margin-left: 0%;
+    width: 100%;
+    }
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0.01;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes slideup { 
+    from {
+    margin-bottom: 0%;
+    height: 0%;
+    }
+
+    to {
+    margin-bottom: 100%;
+    height: 100%;
+    }
+}
+
+body{
+    padding: 0px;
+    margin:0px;
+}
+
+/* A CSS DOTS LOADER BOOTSNIP WE WONT USE. IT WORKS.
+.loader:before,
+.loader:after,
+.loader {
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: load7 1.8s infinite ease-in-out;
+    animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+    margin: 7em auto;
+    font-size: 7px;
+    position: relative;
+    text-indent: -9999em;
+    -webkit-animation-delay: 0.16s;
+    animation-delay: 0.16s;
+}
+.loader:before {
+    left: -3.5em;
+}
+.loader:after {
+    left: 3.5em;
+    -webkit-animation-delay: 0.32s;
+    animation-delay: 0.32s;
+}
+.loader:before,
+.loader:after {
+    content: '';
+    position: absolute;
+    top: 0;
+}
+@-webkit-keyframes load7 {
+    0%,
+    80%,
+    100% {
+    box-shadow: 0 2.5em 0 -1.3em #ffffff;
+}
+    40% {
+    box-shadow: 0 2.5em 0 0 #FFF;
+}
+}
+@keyframes load7 {
+    0%,
+    80%,
+    100% {
+    box-shadow: 0 2.5em 0 -1.3em #ffffff;
+}
+    40% {
+    box-shadow: 0 2.5em 0 0 #FFF;
+}
+}*/
+
+
+/*.iconito {
+        -webkit-transition: transform 1s ease;
+        transition: transform 1s ease;
+        height: 4em;
+        }
+        .iconito:hover {
+            transform: scale(0.9); 
+        }*/
+
+/* FIRST SCREEN*/
+#primera_pantalla{
+    justify-content: center;
+    align-items: center;
+    min-height: 82vh;
+    vertical-align: middle;
+}
+#titulo_neon{
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(225, 237, 252);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    text-decoration: normal;
+    text-align: center;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    white-space: pre;
+    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #f200ff , 0 0 70px #ff00de , 0 0 80px #ea00ff , 0 0 100px #d400ff ;
+    -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+
+#titulo_neon:hover {
+    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #006eff , 0 0 70px #7c71f8 , 0 0 80px #3026f7 , 0 0 100px #0577f8 ;
+}
+/*body{
+    background: rgb(131,226,251);
+    background: linear-gradient(135deg, rgba(131,226,251,1) 0%, rgba(213,241,255,1) 15%, rgba(251,251,251,1) 48%, rgba(210,184,240,1) 93%, rgb(183, 129, 245) 100%);
+
+}*/
+
+/*NAVBAR*/
+#keridonavbar{
+    background-image: url('img\PETs_iStock-871467770_1550x750.jpg');
+}
+
+/*FONTS*/
+p, li, a, h4, h2{
+    font-family: 'Jura';
+    }
+#nosotrostexto> p {
+    color: white;
+}
+
+h4, h2{
+    margin-top: 1em;
+    font-weight: 800;
+    /*color:rgb(100, 172, 250);*/
+    color: white;
+}
+a{
+    text-decoration: none;
+    /*color: #006eff;*/
+}
+
+li{
+    line-height: 2em;
+    text-align:center;
+}
+
+
+#nosotros_empresa h4:hover{
+    color:#ff009d;
+}
+.innerhover{
+    color:white;
+}
+.innerhover:hover{
+    color:#ff009d;
+}
+
+.columnas_rebeldes p, .columnas_rebeldes span{
+    color:rgb(192, 241, 255);
+}
+/*WHAT WE ARE STRIPE*/
+#quesomos{ 
+    background: linear-gradient(135deg, rgba(72,2,78,1) 0%, rgba(47,37,155,1) 49%, rgb(119, 2, 187) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nosotros_empresa{
+    background-color: rgb(61, 6, 189);/*rgb(125, 22, 123);*/
+}
+
+#titulo_1 {
+    font-family: 'Jura';
+    }
+
+/*WHO WE ARE STRIPE*/
+.imgRedonda {
+    width:200px;
+    height:200px;
+    border-radius:100px;
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
+}
+
+#nikki, #pancha{
+    align-items: center;
+}
+
+/* FORM STRIPE*/
+#cajaformulario{
+    box-shadow: -30px 30px 10px 0px rgba(0,0,0,0.8);
+    -webkit-box-shadow: -30px 30px 10px 0px rgba(0,0,0,0.8);
+    -moz-box-shadow: -30px 30px 10px 0px rgba(0,0,0,0.8);
+}
+
+
+.columnas_rebeldes>h4{
+    /*color:rgb(251, 252, 253);*/
+    margin-top: 1em;
+    }
+
+
+/* Tabletas */
+
+
+
+
