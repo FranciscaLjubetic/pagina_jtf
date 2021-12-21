@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+</head>
+<style>
+    body {
+        height: 100vh;
+        padding: 0px;
+    }
+    #thankyou{
+        height: 100%;
+        align-items: center;
+        vertical-align: middle;
+        background: rgb(72,2,78); background: linear-gradient(135deg, rgba(72,2,78,1) 0%, rgba(47,37,155,1) 49%, rgb(119, 2, 187) 100%);
+        padding: 7vh;
+
+    }
+
+    #cajaagradecimiento{
+        align-items: center;
+        height: 100%;
+        border-radius: 1%;
+        padding: 10%;
+        
+    }
+
+    #cajaagradecimiento > img {
+        height: 7em;
+    }
+</style>
+<body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <div id="thankyou" class="container-fluid px-auto py-auto">
+        <div id="cajaagradecimiento" class="text-center">
+            <img src="img/logo_degrade.png" alt="" class="img-fluid my-4">
+            <h4 class="text-info my-4">Tu correo ha sido enviado. <br> Gracias por contactarte con nosotros!! <br> Nos pondremos en contacto contigo a la brevedad</h4>
+            <a class="btn btn-primary text-info fw-bold my-4" href="https://jumptofuture.cl/index.html">Volver</a>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -40,15 +40,15 @@
     }
 }
 
+@import url('http://fonts.cdnfonts.com/css/terminator-real-nfi-2');
+
 body{
     padding: 0px;
     margin:0px;
 }
 
-/* A CSS DOTS LOADER BOOTSNIP WE WONT USE. IT WORKS.
-.loader:before,
-.loader:after,
-.loader {
+/*A CSS DOTS LOADER BOOTSNIP WE WONT USE. IT WORKS.*/
+.loader:before, .loader:after,.loader {
     border-radius: 50%;
     width: 1em;
     height: 1em;
@@ -98,7 +98,7 @@ body{
     40% {
     box-shadow: 0 2.5em 0 0 #FFF;
 }
-}*/
+}
 
 
 /*.iconito {
@@ -114,11 +114,11 @@ body{
 #primera_pantalla{
     justify-content: center;
     align-items: center;
-    min-height: 82vh;
+    min-height: 100vh;
     vertical-align: middle;
 }
 #titulo_neon{
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Terminator Real NFI', sans-serif;
     color: rgb(225, 237, 252);
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -139,7 +139,7 @@ body{
 
 
 #titulo_neon:hover {
-    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #006eff , 0 0 70px #7c71f8 , 0 0 80px #3026f7 , 0 0 100px #0577f8 ;
+    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #1100ff , 0 0 70px #7c71f8 , 0 0 80px #3026f7 , 0 0 100px #0519f8 ;
 }
 /*body{
     background: rgb(131,226,251);
@@ -153,55 +153,84 @@ body{
 }
 
 /*FONTS*/
-p, li, a, h4, h2{
+p, li, a, span, h4, h3, h5, h6 {
     font-family: 'Jura';
+    font-weight: bolder;
     }
+
+h1, h2{
+    font-family: 'Terminator Real NFI', sans-serif;
+}
 #nosotrostexto> p {
     color: white;
 }
 
-h4, h2{
+h1, h4, h2{
     margin-top: 1em;
-    font-weight: 800;
+    font-weight: bolder;
     /*color:rgb(100, 172, 250);*/
-    color: white;
-    text-shadow: -5px 3px 3px rgba(8,8,9,0.99);
+    
+    /*text-shadow: -5px 3px 3px rgba(8,8,9,0.99);*/
 }
 a{
     text-decoration: none;
     /*color: #006eff;*/
 }
-
-li{
-    line-height: 2em;
-    text-align:center;
+.card {
+    background-color: none !important;
 }
+
 
 
 #nosotros_empresa h4:hover{
-    color:#ff009d;
+    color:#ff00f7;
+}
+#servicios:hover {
+    color:#ff00f7;
 }
 .innerhover{
-    color:white;
+    color:#70daf5;
+}
+#nuestraempresa {
+    color:#70daf5;
+}
+
+
+#nuestraempresa:hover  {
+    color:#ff00f7;
+
 }
 .innerhover:hover{
-    color:#ff009d;
+    color:#ff00f7;
 }
 
 .columnas_rebeldes p, .columnas_rebeldes span{
-    color:rgb(214, 239, 245);
+    color:rgb(250, 6, 242);
     
 }
 /*WHAT WE ARE STRIPE*/
 #quesomos{ 
-    background: linear-gradient(135deg, rgba(72,2,78,1) 0%, rgba(47,37,155,1) 49%, rgb(119, 2, 187) 100%);
+    /**/
+    background: rgb(100,100,249); background: linear-gradient(45deg, rgba(100,100,249,1) 0%, rgba(228,152,241,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 110vh;
+}
+#quienes_somos_nosotras {
+    background: rgb(100,100,249); background: linear-gradient(45deg, rgba(100,100,249,1) 0%, rgba(228,152,241,1) 100%);
 }
 
-#nosotros_empresa{
+#row_formulario,  {
+    background: rgb(72,2,78); background: linear-gradient(135deg, rgba(72,2,78,1) 0%, rgba(47,37,155,1) 49%, rgb(119, 2, 187) 100%);
+}
+
+/*#valores_corporativos, #valores_corporativos_dos{
     background-color: rgb(61, 6, 189);/*rgb(125, 22, 123);*/
+/*}*/
+
+#empresa_todo, #lista_precios, #nuestros_servicios_formulario {
+    background-color: black;
 }
 
 #titulo_1 {
@@ -213,12 +242,13 @@ li{
     width:200px;
     height:200px;
     border-radius:100px;
-    border-style: solid;
-    border-color: white;
-    border-width: 6px;
-    box-shadow: -15px 11px 14px 0px rgba(0,0,0,1);
-    -webkit-box-shadow: -15px 11px 14px 0px rgba(0,0,0,1);
-    -moz-box-shadow: -15px 11px 14px 0px rgba(0,0,0,1);
+    border-style:outset;
+    border-color: rgb(6, 176, 255);
+    border-width: 8px;
+    
+}
+.imgRedonda:hover {
+    border-color: rgb(243, 6, 255);
 }
 
 #nikki, #pancha{
@@ -237,6 +267,14 @@ li{
     /*color:rgb(251, 252, 253);*/
     margin-top: 1em;
     }
+
+.cuadrada {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    overflow: hidden;
+    align-items: center;
+}
 
 
 /* Tabletas */

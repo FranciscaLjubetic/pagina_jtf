@@ -3,11 +3,14 @@ $(document).ready(function(){
     
     $('#gifi').hide();
     $('#textloading').html('click to start');
+    $( "#primera_pantalla" ).hide();
+    $( "#todo_lo_demas" ).show();
     
 
     $( "#titulo_neon" ).on('click', 
         function() {
             $( "#primera_pantalla" ).hide();
+            $( "#todo_lo_demas" ).show();
         
         }
     );
