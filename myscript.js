@@ -31,26 +31,26 @@ $(document).ready(function(){
         }
     );
 
-    $( "#vision" ).hover( 
+    $( "#vision" ).on('click', 
         function() {
         $( "#visiontexto" ).toggle();
         }
     );
 
-    $( "#mision" ).hover( 
+    $( "#mision" ).on('click', 
         function() {
         $( "#misiontexto" ).toggle();
         }
     );
 
 
-    $( "#valores" ).hover( 
+    $( "#valores" ).on('click', 
         function() {
         $( "#valorestexto" ).toggle();
         }
     );
 
-    $( "#objestrategicos" ).hover( 
+    $( "#objestrategicos" ).on('click', 
         function() {
         $( "#objestrategicostexto" ).toggle();
         }
