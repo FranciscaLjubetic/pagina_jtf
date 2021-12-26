@@ -64,11 +64,7 @@ $(document).ready(function(){
 
     
 
-    $('#botonenviar').on('click',function(evento){
-        evento.preventDefault();
-
-        $(".toast").toast("show");
-    });
+    
 
             
 })
